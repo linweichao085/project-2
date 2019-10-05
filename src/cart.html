@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./iconfont/iconfont-cart/iconfont.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-wrap">
+            <div class="header-left fl">
+                <div>
+                    <a href="" class="fl userName"><span>用户名</span></a>
+                    <span class="iconfont icon-xiajiantou fl"></span>
+                </div>
+                <div>
+                    <span class="iconfont icon-iconfontunie62c fl
+                         message"></span>
+                    <p class="fl">消息</p>
+                    <span class="iconfont icon-xiajiantou fl"></span>
+                </div>
+                <div>
+                    <a href=""><span class=" res">手机逛淘宝</span></a>
+
+                </div>
+            </div>
+            <div class="header-right fr">
+                <ul>
+                    <li>
+                        <a href=""><span class="fl ">淘宝网首页</span> </a>
+                    </li>
+                    <li class="public-menu my">
+                        <a href=""><span class="fl">我的淘宝</span></a>
+                        <span class="iconfont icon-xiajiantou fl"></span>
+                        <div class="menu">
+                            <a href="">
+                                <p>已买到的宝贝</p>
+                            </a>
+                            <a href="">
+                                <p>我的足迹</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-htmal5icon29 fl special"></span>
+                        <a href=""><span class="fl ">购物车</span></a>
+                        <span class="iconfont icon-xiajiantou fl "></span>
+                    </li>
+                    <li class="public-menu collection">
+                        <span class="iconfont icon-xingxing fl"></span>
+                        <a href=""><span class="fl ">收藏夹</span>
+                            <span class="iconfont icon-xiajiantou fl"></span></a>
+                        <div class="menu">
+                            <a href="">
+                                <p>收藏的宝贝</p>
+                            </a>
+                            <a href="">
+                                <p>收藏的店铺</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href=""><span class="fl ">商品分类</span></a></li>
+                    <span class="fl">|</span>
+                    <li class="public-menu">
+                        <a href=""><span class="fl ">千牛卖家中心</span></a>
+                        <span class="iconfont icon-xiajiantou fl"></span>
+                        <div class="menu">
+                            <a href="">
+                                <p>免费开店</p>
+                            </a>
+                            <a href="">
+                                <p>已卖出的宝贝</p>
+                            </a>
+                            <a href="">
+                                <p>出售中的宝贝</p>
+                            </a>
+                            <a href="">
+                                <p>卖家服务市场</p>
+                            </a>
+                            <a href="">
+                                <p>卖家培训中心</p>
+                            </a>
+                            <a href="">
+                                <p>体验中心</p>
+                            </a>
+                            <a href="">
+                                <p>问友商</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="public-menu">
+                        <a href=""><span class="fl ">联系客服</span></a>
+                        <span class="iconfont icon-xiajiantou fl"></span>
+                        <div class="menu">
+                            <a href="">
+                                <p>消费者客服</p>
+                            </a>
+                            <a href="">
+                                <p>卖家客服</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-caidan fl special"></span>
+                        <a href=""><span class="fl ">网站导航</span>
+                            <span class="iconfont icon-xiajiantou fl "></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="logo-wrap">
+        <div class="title fl">
+            <h1 class="logo fl">
+                <img src="./images/cart/logo_03.png" alt="">
+            </h1>
+            <h2 class="fl">购物车</h2>
+        </div>
+        <div class="search fr">
+            <div class="search-left">
+                <div class="fl baby">
+                    <a href="" class="fl">宝贝</a>
+                    <span class="iconfont icon-xiajiantou fl"></span>
+                    <ul class="baby-ul">
+                        <a href="">
+                            <li>天猫</li>
+                        </a>
+                        <a href="">
+                            <li>店铺</li>
+                        </a>
+                    </ul>
+                </div>
+                <input type="text" class="txt fl">
+                <input type="submit" value="搜索" class="submit fl">
+
+            </div>
+        </div>
+    </div>
+    <section class="cartMain">
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <!--所有商品全选-->
+                    <input type="checkbox" id="all" class="whole_check">
+                    <label for="all"></label>
+                    全选
+                </li>
+                <li class="list_con">商品信息</li>
+                <!-- <li class="list_info">商品参数</li> -->
+                <li class="list_price">单价</li>
+                <li class="list_amount">数量</li>
+                <li class="list_sum">金额</li>
+                <li class="list_op">操作</li>
+            </ul>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_a" class="shopChoice">
+                    <label for="shop_a" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">NIKE官方旗舰店</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_2" class="son_check">
+                        <label for="checkbox_2"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/cart/nike3.jpg" alt=""></a>
+                        </div>
+                        <div class="list_text"><a href="javascript:;">【时装周】Nike 耐克官方NIKE AF1 SHADOW 女子运动鞋 CI0919</a>
+                        </div>
+                    </li>
+                    <li class="list_info">
+                        <p>鞋码：40.5</p>
+                        <p>颜色分类：101淡象牙白/天体金/热带绿</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_3" class="son_check">
+                        <label for="checkbox_3"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/cart/nike2.jpg" alt=""></a>
+                        </div>
+                        <div class="list_text"><a href="javascript:;">【时装周】Nike 耐克官方NIKE AIR MAX 98男子运动鞋气垫休闲鞋 640744</a>
+                        </div>
+                    </li>
+                    <li class="list_info">
+                        <p>鞋码：43</p>
+                        <p>颜色分类：106白色/白金色/黑/反射银</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥839</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥839</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_6" class="son_check">
+                        <label for="checkbox_6"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/cart/nike.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">【时装周】Nike 耐克官方 NIKE AIR MONARCH IV男子训练鞋415445</a>
+                        </div>
+                    </li>
+                    <li class="list_info">
+                        <p>鞋码：43</p>
+                        <p>颜色分类：102白色/金属银/深藏青</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥549</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥549</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_b" class="shopChoice">
+                    <label for="shop_b" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">特步官方旗舰店</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_4" class="son_check">
+                        <label for="checkbox_4"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/cart/tebu.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">特步情侣板鞋男鞋休闲鞋夏季跑步鞋运动鞋滑板鞋女鞋正品小白鞋子
+                            </a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>情侣款：男款</p>
+                        <p>尺码：42 </p>
+                        <p>颜色分类：白绿</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥119</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥119</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_5" class="son_check">
+                        <label for="checkbox_5"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/cart/tebu2.jpg" alt=""></a>
+                        </div>
+                        <div class="list_text"><a href="javascript:;">【时装周】特步男子帆布鞋2019秋季轻便纯色经典休闲简约运动鞋简约搭扣设计</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>鞋码：41
+
+                        </p>
+                        <p>颜色分类：黑白
+
+                        </p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥99</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥99</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_c" class="shopChoice">
+                    <label for="shop_c" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">李宁官方旗舰店</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_8" class="son_check">
+                        <label for="checkbox_8"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/cart/lining.jpg" alt=""></a>
+                        </div>
+                        <div class="list_text"><a href="javascript:;">李宁男鞋休闲鞋溯系列逐趣秋冬季时尚百搭高帮男女帆布鞋休闲鞋</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>鞋码：42</p>
+                        <p>颜色分类：A款-休闲鞋-AGCP279-2-冷檀黑(男款)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥398</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥398</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_9" class="son_check">
+                        <label for="checkbox_9"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/cart/lining2.jpg" alt=""></a>
+                        </div>
+                        <div class="list_text"><a href="javascript:;">李宁源系列James联名款爱心涂鸦帆布鞋男鞋百搭高帮休闲运动鞋男</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>鞋码：42
+
+                        </p>
+                        <p>颜色分类：亮白色/姜饼褐/公牛红</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥398</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥398</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="bar-wrapper">
+            <div class="bar-right">
+                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                <div class="calBtn"><a href="javascript:;">结算</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="model_bg"></section>
+    <section class="my_model">
+        <p class="title">删除宝贝<span class="closeModel">X</span></p>
+        <p>您确认要删除该宝贝吗？</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;"
+                class="dialog-close">关闭</a></div>
+    </section>
+    <script src="./lib/jquery.js"></script>
+    <script src="./js/carts.js"></script>
+</body>
+
+</html>

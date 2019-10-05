@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "400102",
+      "name": "购物车",
+      "font_class": "htmal5icon29",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "417560",
+      "name": "信封",
+      "font_class": "iconfontunie62c",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "1304947",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "1638281",
+      "name": "下箭头",
+      "font_class": "xiajiantou",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "1724895",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    }
+  ]
+}
