@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+body,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea,
+select,
+input,
+form {
+    margin: 0;
+    padding: 0
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a,
+u {
+    text-decoration: none;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+img {
+    vertical-align: top;
+}
+
+input {
+    outline: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.header {
+    width: 990px;
+    height: 26px;
+    background: #000;
+    margin: 0 auto;
+}
+
+#main {
+    background: #DF231C;
+}
+
+.advertising {
+    width: 990px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scale {
+    transform: scaleX(-1);
+}
+
+.iphone>span {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.iphone {
+    width: 482px;
+    margin: 20px auto;
+}
+
+.phone-logo {
+    width: 44px;
+    height: 22px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.list-wrap {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.phone-list {
+    width: 156px;
+    height: 250px;
+    background: #fff;
+
+    position: relative;
+    padding: 0 10px;
+    border-radius: 6px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.phone-style {
+    width: 156px;
+    height: 156px;
+}
+
+.installment {
+    width: 20px;
+    height: 20px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: absolute;
+    top: 6px;
+    right: 0px;
+}
+
+.phone-list a {
+    color: #000;
+}
+
+.free {
+
+    border-radius: 4px;
+    border-color: rgb(255, 0, 54);
+    padding: 0 6px;
+    ;
+    color: rgb(255, 0, 54);
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.unit {
+    font-size: 13px;
+    color: rgb(255, 0, 54);
+}
+
+.price {
+    color: rgb(255, 0, 54);
+}
+
+.not {
+    color: #999;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.big {
+    width: 990px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.big img {
+    border-radius: 7.92px;
+    width: 184px;
+    height: 240px;
+    margin-right: 10px;
+    /* display: inline-block; */
+}
+
+.more {
+    border-radius: 6px;
+    height: 265px;
+    width: 188px;
+    margin-right: 10px;
+}
+
+.more img {
+    width: 153px;
+    height: 153px;
+    margin-top: 10px;
+}
+
+.more .images {
+    width: 190px;
+    height: 174px;
+    text-align: center;
+    background: #fff;
+}
+
+.activity {
+    width: 190px;
+    height: 60px;
+    padding: 13px 0;
+    background-image: linear-gradient(to right, rgb(201, 89, 250), rgb(155, 46, 243));
+    text-align: center;
+    font-size: 24px;
+}
+
+.activity>a {
+    color: #fff;
+}
+
+.phone-img {
+    width: 240px;
+    height: 240px;
+}
+
+.phone {
+    background: #fff;
+    width: 240px;
+    height: 375px;
+    border-radius: 12px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.comment {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.phone p {
+    margin-top: 11px;
+    padding-right: 12px;
+    padding-left: 12px;
+    width: 216px;
+    height: 46px;
+    font-size: 18px;
+}
+
+.sale {
+    font-size: 12px;
+    white-space: nowrap;
+    margin-top: 4px;
+    margin-left: 13px;
+    border-radius: 4px;
+    background-color: rgb(255, 238, 238);
+    color: rgb(255, 0, 54);
+    padding: 0px 8px;
+    border: 1px solid rgb(255, 0, 54);
+}
+
+.bargain {
+    width: 44px;
+    height: 18px;
+    border-radius: 3px;
+    margin-left: 14px;
+    margin-top: 9px;
+}
+
+.guess-like a {
+    color: #000;
+}
+
+.phone-price {
+    color: rgb(255, 18, 73);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.tower {
+    width: 100px;
+    height: 376px;
+
+    position: fixed;
+    right: 100px;
+    top: 5px;
+}
+
+.qrcode {
+    width: 100px;
+    height: 100px;
+}
+
+.tower li {
+    padding-left: 20px;
+    line-height: 24px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.tower ul {
+    background: #8035FB;
+}
+
+.current {
+    background-color: #5122A2;
+}
+
+.back-top {
+    padding-left: 30px;
+    background: #8035FB;
+    cursor: pointer;
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 6px;
+}
+
+.back-top .arrow {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
