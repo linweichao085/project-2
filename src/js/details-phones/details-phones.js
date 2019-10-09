@@ -28,13 +28,26 @@ $(function () {
         //改变选中时候的选项框的样式，移除其他几个选项的样式
     });
 })
-//轮播小图移入效果
+
+//选项卡小图移入效果
 $(function () {
     $(".tb-thumb img").mouseover(function () {
         var id = $(this).index();
         $(".tb-thumb img").eq(id).addClass("pattern").siblings().removeClass("pattern");
     })
 })
+
+//购买详情移入效果
+$(".hovers").hover(function(){
+    $(this).css({
+        border: "2px solid red"
+    });
+},function(){
+    $(this).css({
+        border: "1px solid #000"
+    });
+});
+
 
 
 //数量增加 减少
@@ -51,6 +64,7 @@ $(function () {
         }
     })
 })
+
 //宝贝分类
 $(function () {
     $(".skin-h4-bady").hide()
