@@ -596,8 +596,6 @@ float: left;
 }
 .skin-box-1{
     width: 190px;
-    /* height: 32px; */
-    /* line-height: 32px; */
     background: #f9f9f9;
     border-top: none;
 }
@@ -614,7 +612,6 @@ float: left;
 }
 .skin-box-2{
     width: 190px;
-    /* height: 32px; */
     border-bottom: none;
     border-top: none;
     
@@ -632,7 +629,6 @@ float: left;
 }
 .catName{
     width: 190px;
-    /* height: 64px; */
     border-top: none;
     border-left: none;
 }
@@ -656,21 +652,10 @@ float: left;
     line-height: 32px;
     font-size: 14px;
     font-family: "微软雅黑";
-    color: #333;
-    
-    /* background: url(images/XQYxuebitu/c340.png) no-repeat -31px -113px; */
-    /* background-repeat: ;
-    background-position: ; */
-    
-				
-   
+    color: #333; 
 }
-
-
-
 .cat-hd{
     width: 190px;
-    /* height: 64px; */
     border-top: none;
     border-left: none;
 }
@@ -692,7 +677,6 @@ float: left;
     text-align: center;
     font-size: 12px;
     margin-top: 6px;
-
 }
 .skin-box-bd h3{
     background: #eee9e9fb;
@@ -723,8 +707,6 @@ float: left;
     height: 48px;
     display: block;
     line-height: 48px;
-    /* border: 1xp solid; */
-    /* background: red; */
     float: left;
     text-align: center;
     cursor:pointer;
@@ -744,10 +726,9 @@ float: left;
 .suggest-main-xq li{
     width: 220px;
     height: 18px;
-    line-height: 18px;
     font-size: 12px;
     font-family: "微软雅黑";
-    margin: 10xp 15px 0 10px;
+    margin: 10px 15px 0 10px;
     float: left;
     
 }
@@ -768,7 +749,6 @@ float: left;
 }
 .xxss{
     width: 788px;
-    /* height: 1500px; */
     position: absolute;
     left: 0px;
     top: 50px;
@@ -807,7 +787,6 @@ float: left;
     margin: 0 2px;
 }
 .rate-label{
-    /* width: 53px; */
     height: 61px;
     margin: 4px 0 0;
     padding: 0 12px 0 25px;
@@ -833,7 +812,6 @@ float: left;
     float: left;
 }
 .rate-inner li{
-    /* width: 80px; */
     height: 22px;
     color: #ff0036;
     background: #fff;
@@ -857,16 +835,12 @@ float: left;
     background: #f6f6f6;
     position: relative;
 }
-
-
-
 .boolbar1{
     width: 400px;
     height: 300px;
     background:red;
     position: absolute;
     left: 0;
-    /* display: none; */
 }
 .boolbar2{
     width: 400px;

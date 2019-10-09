@@ -113,7 +113,12 @@ $(function(){
      setTotal();
     })
     $(".mui-amount-decrease").click(function(){
-     t.val(parseInt(t.val())-1)
+        if(parseInt(t.val())>1){
+             t.val(parseInt(t.val())-1)
+        }else{
+            $(".mui-amount-decrease".attr("disabled","disabled"))
+        }
+    
      setTotal();
     })
 })
