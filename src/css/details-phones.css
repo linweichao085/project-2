@@ -1,3 +1,4 @@
+
 /* 头部 Logo 搜索框----------- */
 .headerCon{
     width: 1190px;
@@ -97,7 +98,7 @@
     height: 300px;
     background: #999;
     position: absolute;
-    left: 334px;
+    left: 320px;
     top: 60px;
     display: none;
 }
@@ -729,6 +730,11 @@ float: left;
     border: 1px solid #ccc;
     padding: 0 0 0 26px;
 }
+
+  .skin-box-h4,.skin-box-price{
+    cursor:pointer;
+  } 
+
 .skin-h4-bady span{
     color: #999;
     font-size: 12px;
@@ -948,9 +954,340 @@ float: left;
 .pro-intor{
     margin-top: 10px;
 }
-
-
-
-
-
-
+/* 天猫 footer */
+#footer {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    min-height: 558px;
+    border-top: 1px solid #D1D7DC;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+  }
+  
+  /* 品质保障 */
+  #tmall-ensure {
+    width: 1190px;
+    height: 100px;
+    background: url(../images/index-image/footer-load1.jpg) no-repeat;
+    margin: 25px auto;
+    padding: 0;
+    text-align: center;
+  }
+  
+  #tmall-ensure a {
+    float: left;
+    display: block;
+    width: 297px;
+    height: 100px;
+    text-indent: -10001em;
+    cursor: pointer;
+  }
+  
+  /* 购物指南 */
+  #tmall-desc {
+    width: 1190px;
+    padding-top: 22px;
+    height: 190px;
+    margin: auto;
+    border-top: 1px solid #ededed;
+    background: url(../images/index-image/footer-xiaoheimao.png)45px bottom no-repeat;
+    background-size: 68px 25px;
+  }
+  
+  #tmall-desc dl {
+    float: left;
+    width: 186px;
+    padding-left: 52px;
+  }
+  
+  #tmall-desc dl dt {
+    color: #646464;
+    font-size: 16px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  #tmall-desc dl dd {
+    text-align: left;
+  }
+  
+  #tmall-desc dl a {
+    width: 100px;
+    overflow: hidden;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+    color: #8b8b8b;
+    display: block;
+    cursor: pointer;
+    font-size: 12px
+  }
+  
+  #tmall-desc #mobile a {
+    width: 105px;
+    height: 105px;
+    line-height: 105px;
+    text-align: center;
+  }
+  
+  #tmall-desc #mobile img {
+    border: none;
+    width: 105px;
+    height: 105px;
+  }
+  
+  /* Copy-Right */
+  #tmall-copyright {
+    border-top: 2px solid #ff0036;
+    background: #000;
+    text-align: left;
+    min-height: 177px;
+  }
+  
+  #tmall-copyright .footer-tmall-info {
+    width: 1190px;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 25px;
+  }
+  
+  #footer p {
+    padding: 5px 0;
+  }
+  
+  #footer p a {
+    margin-right: 3px;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  #tmall-copyright .footer-otherlink {
+    width: 1190px;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 25px;
+    font-size: 12px;
+  }
+  
+  /* footer-copyright */
+  .footer-copyright {
+    width: 1190px;
+    margin: 0 auto;
+    line-height: 20px;
+    background: #000;
+    color: #a4a4a4;
+  }
+  
+  .footer-copyright b {
+    display: block;
+    color: #686868;
+    font-weight: 100;
+  }
+  
+  #footer .footer-copyright .footer-fp-img {
+    display: block;
+    padding-top: 10px;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  
+  
+  /* 天猫浮动搜索栏 */
+  #totalContainer {
+    width: 100%;
+    position: fixed;
+    top: -50px;
+    height: 50px;
+    z-index: 10000;
+    background: #ff0036;
+    opacity: 1;
+    margin: 0 auto;
+    transition: top .5s ease-out;
+    box-shadow: 0 0 4px #eaeaea;
+  }
+  
+  #Search-container {
+    width: 1230px;
+    padding-right: 30px;
+    position: relative;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .iconfont-logo {
+    float: left;
+    width: 160px;
+    margin-top: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    line-height: 30px;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  #tmall-search {
+    float: none;
+    padding-top: 12px;
+    width: 740px;
+    position: relative;
+    z-index: 10;
+    height: 30px;
+    margin: 0 auto;
+  }
+  
+  form {
+    border: none !important;
+  }
+  
+  .tmall-search-input {
+    float: left;
+    position: relative;
+    height: 30px;
+    vertical-align: middle;
+  }
+  
+  .tmall-search-input input {
+    width: 640px;
+    color: #000;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 3px 5px 5px;
+    border: none;
+    font-size: 900;
+    box-sizing: content-box;
+  }
+  
+  #tmall-search button {
+    float: left;
+    width: 90px;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    color: #fff;
+    background: #ff0036;
+    font-family: '\5FAE\8F6F\96C5\9ED1', arial, "\5b8b\4f53";
+  }
+  
+  /* 楼层电梯导航 */
+  .floor-nav-wrapper {
+    width: 35px;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    z-index: 10000;
+    margin-left: -673px !important;
+  }
+  
+  .floor-lift-item {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1px;
+    overflow: hidden;
+    font-size: 12px;
+    background: rgba(0, 0, 0, .6);
+    display: block;
+  }
+  
+  .floor-lift-item .floor-lift-item-name {
+    line-height: 12px;
+    width: 24px;
+    height: 28px;
+    margin: 6px auto;
+  }
+  
+  .floor-nav-wrapper .floor-lift-header {
+    background: #ff0036;
+  }
+  
+  .floor-nav-wrapper .color-type-green1.mui-lift-nav,
+  .floor-nav-wrapper .color-type-green1:hover {
+    background: #64C333;
+  }
+  
+  .floor-nav-wrapper .color-type-purple.mui-lift-nav,
+  .floor-nav-wrapper .color-type-purple:hover {
+    background: #000;
+  }
+  
+  .floor-nav-wrapper .color-type-cyan.mui-lift-nav,
+  .floor-nav-wrapper .color-type-cyan:hover {
+    background: #19C8A9;
+  }
+  
+  .floor-nav-wrapper .color-type-blue.mui-lift-nav,
+  .floor-nav-wrapper .color-type-blue:hover {
+    background: #0AA6E8;
+  }
+  
+  .floor-nav-wrapper .color-type-pink.mui-lift-nav,
+  .floor-nav-wrapper .color-type-pink:hover {
+    background: #EA5F8D;
+  }
+  
+  .floor-nav-wrapper .color-type-green2.mui-lift-nav,
+  .floor-nav-wrapper .color-type-green2:hover {
+    background: #64C333;
+  }
+  
+  .floor-nav-wrapper .color-type-red.mui-lift-nav,
+  .floor-nav-wrapper .color-type-red:hover {
+    background: #F15453;
+  }
+  
+  .floor-nav-wrapper .color-type-wonderful.mui-lift-nav,
+  .floor-nav-wrapper .color-type-wonderful:hover {
+    background: #ff0036;
+  }
+  
+  /* 天猫侧边栏 */
+  .mall-sidebar-outer,
+  .mall-sidebar-body {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+  }
+  
+  .mall-sidebar-outer {
+    width: 0;
+    overflow: visible;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .mall-sidebar-body {
+    width: 270px;
+    color: #fff;
+  }
+  
+  .mall-sidebar-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    background: #000;
+  }
+  
+  .mall-sidebar-con {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    background: #666;
+    width: 280px;
+  }
+  .footer-copyright{
+      font-size: 12px;
+  }

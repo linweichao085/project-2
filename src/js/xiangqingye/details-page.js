@@ -11,10 +11,10 @@
     //头部二维码
     ; $(function () {
         $(".shipwt").mouseenter(function () {
-            $(this).find(".erweima").stop().show();
+            $(this).find(".erweima img").stop().show();
         });
         $(".shipwt").mouseleave(function () {
-            $(this).find(".erweima").stop().hide();
+            $(this).find(".erweima img").stop().hide();
         });
     })
 
