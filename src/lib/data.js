@@ -6,7 +6,7 @@ $(function(){
     str1 += 
     `<li class="brand-item">
     <div class="brand-img">
-      <img src="${json1[i].img_src}">
+      <img src="${json1[i].img_src}" >
     </div>
     <a class="brand-mask" href="##">
       <div class="coupon">
@@ -110,7 +110,7 @@ $(function(){
       <div class="floor-item-content-wrap">
         <div class="floor-item-tag color-type-green" style="visibility:hidden"></div>
         <img class="floor-item-img"
-          src="${json3[i].img_src}">
+        src="${json3[i].img_src}" >
         <div class="floor-item-title">${json3[i].floor_title}</div>
         <div class="floor-price">${json3[i].floor_price}</div>
         <div class="floor-item-reason" style="display:none">

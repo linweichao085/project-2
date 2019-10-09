@@ -231,12 +231,39 @@ window.onload = function () {
            console.log(page);
         }
     })
-}
-$(function() {
+};
+
+;$(function() {
 
     $("img.lazy").lazyload({
-    //   placeholder:"./yz_p4.png",
+      placeholder:"../src/images/list/loading.gif",
       effect: "fadeIn"
       });
 
 });
+// 导航栏中鼠标移入动画
+;$(function(){
+    $(".mou-appear").hover(function(){
+      $(this).find("div").css({display:"block"});
+      $(this).css({background: "#fff"});
+    },function(){
+      $(this).find("div").css({display:"none"});
+      $(this).css({background: "#f2f2f2"});
+    });
+  })
+  
+  //a标签的移入移出效果
+  ;$(function(){
+    $(".header-nav a").hover(function(){
+      $(this).css({color: "#ff0036"});
+    },function(){
+      $(this).css({color: "#999"})
+    })
+  })
+  ;$(function(){
+    $(".header a").hover(function(){
+      $(this).css({color: "#ff0036"});
+    },function(){
+      $(this).css({color: "#999"})
+    })
+  })

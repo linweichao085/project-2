@@ -1,7 +1,5 @@
-$(function(){
-    // $("#header").hide();
-})
-$(function () {
+
+;$(function () {
 
     //全局的checkbox选中和未选中的样式
     var $allCheckbox = $('input[type="checkbox"]'),     //全局的全部checkbox
@@ -52,7 +50,7 @@ $(function () {
                 $wholeChexbox.next('label').removeClass('mark');
             }
         })
-    })
+    });
 
     //=======================================每个店铺checkbox与全选checkbox的关系/每个店铺与其下商品样式的变化===================================================
 
@@ -239,3 +237,30 @@ $(function () {
 
 
 });
+
+;$(function(){
+    $(".mou-appear").hover(function(){
+      $(this).find("div").css({display:"block"});
+      $(this).css({background: "#fff"});
+    },function(){
+      $(this).find("div").css({display:"none"});
+      $(this).css({background: "#f2f2f2"});
+    });
+  })
+  
+  //a标签的移入移出效果
+  ;$(function(){
+    $(".header-nav a").hover(function(){
+      $(this).css({color: "#ff0036"});
+    },function(){
+      $(this).css({color: "#999"})
+    })
+  })
+  $(function(){
+    $(".header a").hover(function(){
+      $(this).css({color: "#ff0036"});
+    },function(){
+      $(this).css({color: "#999"})
+    })
+  })
+ 

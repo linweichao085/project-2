@@ -38,7 +38,7 @@ input{
 .clear{
 	zoom:1;
 }
-#header{
+/* #header{
     background: #f5f5f5;
     font-size: 12px;
     color: #6c6c6c;
@@ -61,7 +61,7 @@ input{
 
 }
 .header-left p{
-    /* margin: 0 6px; */
+    
     color: #000;
 }
 #header .special{
@@ -97,18 +97,368 @@ input{
     position: absolute;
     display: none;
 }
-/* .my .menu{
-    top: 35px;
-    left: 0;
-    background: #fff;
-}
-.collection .menu{
-    top: 35px;
-    left: 0;
-} */
+
 .public-menu{
     position: relative;
+} */
+
+a{
+    color: #999;
 }
+/* index-css */
+.header-nav {
+    width: 100%;
+    background: #f2f2f2;
+  }
+  
+  .header-nav b {
+    width: 0;
+    height: 0;
+    border-width: 3px;
+    border-style: solid dashed dashed;
+    border-color: #bbb transparent transparent;
+  }
+  
+  .nav-layout {
+    width: 1190px;
+    height: 32px;
+    margin: 0 auto;
+    line-height: 32px;
+    position: relative;
+  }
+  
+  .wel {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .wel>a:nth-child(1) {
+    margin: 0 10px 0 20px
+  }
+  
+  .wel>a:nth-child(2) {
+    margin: 0 10px 0 0
+  }
+  
+  .top-nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .top-nav-menu li {
+    float: left;
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .top-nav-menu a {
+    display: block;
+  }
+  
+  /* 我的淘宝 */
+  .mytaobao {
+    position: relative;
+  }
+  
+  .my-taobao-menu>a {
+    padding: 0 14px 0 10px;
+    position: relative;
+  }
+  
+  .mytaobao b {
+    position: absolute;
+    right: 6px;
+    top: 15px;
+  }
+  
+  .my-record {
+    width: 74px;
+    position: absolute;
+    left: 0;
+    top: 32px;
+    padding: 8px 10px;
+    z-index: 9923;
+    background: #fff;
+  }
+  
+  .my-record>a {
+    line-height: 20px;
+    display: block;
+  }
+  
+  /* 购物车 */
+  .nav-car {
+    position: relative;
+    padding: 0 10px;
+  }
+  
+  .nav-car i {
+    position: absolute;
+  }
+  
+  /* 收藏夹 */
+  .my-favorite-menu {
+    position: relative;
+  }
+  
+  .my-favorite-menu>a {
+    display: block;
+    padding: 0 10px;
+    position: relative
+  }
+  
+  .my-favorite-menu>a>b {
+    position: absolute;
+    right: 3px;
+    top: 15px;
+  }
+  
+  .product-shop {
+    width: 64px;
+    position: absolute;
+    padding: 8px 10px;
+    left: 0;
+    top: 32px;
+    background: #fff;
+    z-index: 9999;
+  }
+  
+  .product-shop>a {
+    line-height: 20px;
+    display: block;
+  }
+  
+  /* 分隔符 */
+  .separator {
+    display: inline-block;
+    height: 14px;
+    position: relative;
+    top: 9px;
+    left: 0;
+    border-left: 1px solid #ccc;
+    margin: 0 2px 0 5px
+  }
+  
+  /* 手机版 */
+  .tianmao-mobile {
+    padding: 0px 10px;
+    position: relative
+  }
+  
+  .qrcode {
+    position: absolute;
+    width: 175px;
+    height: 227px;
+    background: #fff;
+    left: -62px;
+    top: 26px;
+    box-shadow: 0 0 5px #aaa;
+    z-index: 9968;
+  }
+  
+  .qrcode-content {
+    width: 175px;
+    height: 175px;
+    margin: 5px 0 0px;
+    background: url(../images/index-image/shoujitianmao.jpg) 0 0 no-repeat;
+  }
+  
+  .qrcode>p {
+    overflow: hidden;
+    margin: 0 15px;
+    height: 35px;
+    background: url(../images/index-image/shoujitianmao2.jpg) center bottom no-repeat;
+  }
+  
+  .qrcode>b {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    margin-left: -2px;
+    border-width: 5px;
+    border-style: dashed dashed solid;
+    border-color: transparent transparent #fff;
+    font-weight: bold;
+  }
+  
+  /* 淘宝网 */
+  .taobao {
+    padding: 0 10px;
+  }
+  
+  /* 商家支持 */
+  .business-support {
+    height: 32px
+  }
+  
+  .business-menu {
+    position: relative
+  }
+  
+  .business-menu>a {
+    padding: 0 14px 0 10px;
+    position: relative;
+    display: block;
+  }
+  
+  .business-menu>a b {
+    position: absolute;
+    right: 6px;
+    top: 15px;
+  }
+  
+  .merchant-help {
+    width: 122px;
+    padding: 8px 10px;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    border: 1px solid #ccc;
+    z-index: 9986;
+    background: #fff;
+  }
+  
+  .merchant-help>ul {
+    width: 122px;
+    overflow: hidden;
+    margin-top: -5px
+  }
+  
+  .merchant-help li {
+    display: block;
+    float: none;
+    padding: 5px 0;
+    height: auto;
+    line-height: 1.4;
+    border-bottom: 1px dotted #827777;
+    margin-right: -20px;
+  }
+  
+  .merchant-help a {
+    display: inline-block;
+    width: 48px;
+    margin-right: 20px;
+    line-height: 22px;
+  }
+  
+  /* 网站导航 */
+  .site-map {
+    padding: 0 14px 0 10px;
+    position: relative;
+  }
+  
+  .site-map-menu {
+    position: relative;
+    z-index: 9999;
+  }
+  
+  .site-map-menu b {
+    position: absolute;
+    right: 6px;
+    top: 15px
+  }
+  
+  .site-hot-map {
+    width: 1198px;
+    position: absolute;
+    left: -1150px
+  }
+  
+  .site-hot-map>img {
+    width: 100%;
+  }
+  
+  /* 搜索部分 */
+  .header {
+    width: 100%;
+    height: 130px;
+  }
+  
+  .headerLayout {
+    width: 1230px;
+    margin: 0 auto;
+  }
+  
+  .mallSearch {
+    float: right;
+    width: 625px;
+    padding-top: 38px;
+    overflow: hidden;
+  }
+  
+  .header-banner {
+    float: right;
+    padding: 2px 0 0 102.5px;
+    height: 70px;
+    width: 200px;
+  }
+  
+  .mall-searchForm {
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+    border-color: #ff0036;
+    position: relative;
+  }
+  
+  .mall-searchForm>input {
+    height: 36px;
+    width: 491px;
+    font-size: 16px;
+    line-height: 22px;
+    box-sizing: border-box;
+    border: none;
+    color: #ccc;
+  }
+  
+  .mall-searchForm button {
+    width: 132px;
+    height: 36px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff0036;
+    overflow: hidden;
+  }
+  
+  /* 热门搜索推荐 */
+  .hot-query {
+    height: 24px;
+    font-size: 14px;
+    padding: 4px 0 0;
+    margin-left: -13px;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .hot-query li {
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    line-height: 1.1;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+  
+  .hot-query a {
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .hot-query-highlight a {
+    color: #ff0036;
+  }
+
 .logo-wrap{
     width: 1190px;
     margin: 0 auto;
