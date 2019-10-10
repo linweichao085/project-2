@@ -24,7 +24,7 @@
         $(".tb-thumb img").mouseover(function () {
             //获取元素下标
             var _index = $(this).index();
-            $(".img-booth img").eq(_index).show().siblings().hide();
+            $("#small img").eq(_index).show().siblings().hide();
             //改变选中时候的选项框的样式，移除其他几个选项的样式
         });
     })
@@ -129,29 +129,58 @@
         })
     })
 
-// 导航栏中鼠标移入动画
-$(function(){
-    $(".mou-appear").hover(function(){
-      $(this).find("div").css({display:"block"});
-      $(this).css({background: "#fff"});
-    },function(){
-      $(this).find("div").css({display:"none"});
-      $(this).css({background: "#f2f2f2"});
-    });
-  })
 
-  //a标签的移入移出效果
-;$(function(){
-    $(".header-nav a").hover(function(){
-      $(this).css({color: "#ff0036"});
-    },function(){
-      $(this).css({color: "#999"})
-    })
-  })
-  $(function(){
-    $(".header a").hover(function(){
-      $(this).css({color: "#ff0036"});
-    },function(){
-      $(this).css({color: "#999"})
-    })
-  })
+
+
+
+//1.
+var oWrap = document.getElementById('wrap');
+var smallDiv = document.getElementById('small');
+var move = document.getElementById('move');
+var bigDiv = document.getElementById('big');
+
+//2.
+smallDiv.onmousemove = function (ev) {
+    var oEvent = ev || event;
+    var iScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    var iScrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+    var disX = oEvent.clientX + iScrollLeft - move.offsetWidth / 2 - oWrap.offsetLeft;
+    var disY = oEvent.clientY + iScrollTop - move.offsetHeight / 2 - oWrap.offsetTop;
+    //  console.log(oWrap.offsetLeft)
+    if (disX < 0) {
+        disX = 0;
+    } else if (disX > smallDiv.offsetWidth - move.offsetWidth) {
+        disX = smallDiv.offsetWidth - move.offsetWidth;
+    };
+    if (disY < 0) {
+        disY = 0;
+    } else if (disY > smallDiv.offsetHeight - move.offsetHeight) {
+        disY = smallDiv.offsetHeight - move.offsetHeight;
+    };
+    move.style.left = disX + 'px';
+    move.style.top = disY + 'px';
+    /*算出move块在X轴的移动距离与总的移动距离的比例*/
+    var _pageX = disX / (smallDiv.offsetWidth - move.offsetWidth);
+    console.log(_pageX)   /*这是一个0~1之间的数*/
+    /*算出move块在Y轴的移动距离与总的移动距离的比例*/
+    var _pageY = disY / (smallDiv.offsetHeight - move.offsetHeight);
+    /*求出大图片在X轴的移动距离*/
+    var mX = _pageX * (bigDiv.children[0].offsetWidth - bigDiv.offsetWidth);
+    /*求出大图片在Y轴的移动距离*/
+    var mY = _pageY * (bigDiv.children[0].offsetHeight - bigDiv.offsetHeight);
+    bigDiv.children[0].style.left = -mX + 'px';
+    bigDiv.children[0].style.top = -mY + 'px';
+};
+
+//3.
+bigDiv.style.display = 'none';
+smallDiv.onmouseover = function (ev) {
+    bigDiv.style.display = 'block';
+    move.style.display = 'block';
+    smallDiv.onmousemove(); //兼容IE
+    
+};
+smallDiv.onmouseout = function () {
+    bigDiv.style.display = 'none';
+    move.style.display = 'none';
+};
