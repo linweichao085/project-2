@@ -101,6 +101,7 @@
     left: 320px;
     top: 60px;
     display: none;
+    z-index: 2;
 }
 .shipwt{
     width: 75px;
@@ -145,17 +146,18 @@
 }
 .input1{
     width: 350px;
-    height: 30px;
-    padding: 10px 3px 5px 5px ;
+    height: 20px;
+    padding: 10px 5px 6px 5px ;
     border: 2px solid #ff0036;
     float: left;
     font-size: 16px;
+    margin-top: 10px;
 }
 .input2,.input3{
     width: 84px;
-    height: 49px;
+    height: 40px;
     cursor:pointer;
-   
+    margin-top: 10px;
 }
 .input2{
     border: 1px solid #ff0036;
@@ -255,8 +257,8 @@ float: left;
     float: left;    
 }
 .xyj-p{
-margin-top: 6px;
-float: left;
+    margin-top: 6px;
+    float: left;
 }
 .xyj-p p{
     float: left;
@@ -1305,14 +1307,18 @@ float: left;
 #small{
     width: 418px;
     height: 418px;
-    /* border:1px solid #ccc; */
     float:left;
 }
 #big{
-    width: 360px;
-    height: 390px;
-    /* border:1px solid #ccc; */
+    width: 380px;
+    height: 420px;
     float:left;
+    z-index: 2;
+    overflow:hidden;
+    display:block;
+    position: absolute;
+    left: 400px;
+    display: none;
 }
 #small{
     text-align:center;
@@ -1322,7 +1328,6 @@ float: left;
 #small img{
     width: 418px;
     height:418px;
-    margin-top:6px;
 }
 #move{
     width: 150px;
@@ -1337,18 +1342,10 @@ float: left;
     cursor:move;
     display:none;
 }
-#big{
-    overflow:hidden;
-    display:block;
-    position: absolute;
-    left: 400px;
-
-}
 #big img{
     position:absolute;
     top:0;
     left:0;
-    /* display: none; */
 }
 
 

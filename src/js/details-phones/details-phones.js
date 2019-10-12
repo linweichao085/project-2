@@ -132,7 +132,7 @@
 
 
 
-
+//放大镜-------------------------------
 //1.
 var oWrap = document.getElementById('wrap');
 var smallDiv = document.getElementById('small');
@@ -173,14 +173,18 @@ smallDiv.onmousemove = function (ev) {
 };
 
 //3.
-bigDiv.style.display = 'none';
 smallDiv.onmouseover = function (ev) {
     bigDiv.style.display = 'block';
     move.style.display = 'block';
     smallDiv.onmousemove(); //兼容IE
-    
+
 };
 smallDiv.onmouseout = function () {
     bigDiv.style.display = 'none';
     move.style.display = 'none';
 };
+
+
+
+
+

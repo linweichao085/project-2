@@ -100,6 +100,7 @@
     left: 334px;
     top: 60px;
     display: none;
+    z-index: 2;
 }
 .shipwt{
     width: 75px;
@@ -139,17 +140,18 @@
 }
 .input1{
     width: 350px;
-    height: 30px;
-    padding: 10px 3px 5px 5px ;
+    height: 20px;
+    padding: 10px 5px 6px 5px ;
     border: 2px solid #ff0036;
     float: left;
     font-size: 16px;
+    margin-top: 10px;
 }
 .input2,.input3{
     width: 84px;
-    height: 49px;
+    height: 40px;
     cursor:pointer;
-   
+    margin-top: 10px;
 }
 .input2{
     border: 1px solid #ff0036;
