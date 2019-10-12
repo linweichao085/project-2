@@ -38,69 +38,7 @@ input{
 .clear{
 	zoom:1;
 }
-/* #header{
-    background: #f5f5f5;
-    font-size: 12px;
-    color: #6c6c6c;
-}
-.header-wrap{
-    margin: 0 auto;
-    width: 1190px;
-    height: 35px;
-}
-#header .iconfont{
-    font-size: 12px;
 
-}
-.header-left{
-    width: 300px;
-    line-height: 35px;
-}
-#header .icon-iconfontunie62c{
-    color: #9c9c9c;
-
-}
-.header-left p{
-    
-    color: #000;
-}
-#header .special{
-    color: #f40;
-}
-.message{
-    margin: 0 6px;
-}
-
-.header-right{
-    line-height: 35px;
-}
-.header-right li{
-    float: left;
-    padding: 0 6px;
-}
-.header-right span{
-    margin-right: 6px;
-}
-#header a{
-    color: #6c6c6c;
-}
-#header a :hover{
-    color: #f40
-}
-.userName{
-    margin-right: 6px;
-}
-.res{
-    margin-left: 14px;
-}
-.menu{
-    position: absolute;
-    display: none;
-}
-
-.public-menu{
-    position: relative;
-} */
 
 a{
     color: #999;
@@ -466,7 +404,7 @@ a{
     height: 45px;  
     padding: 20px 0 30px 0;
 }
-.logo{
+.logo>a{
     width: 134px;
     height: 60px;
 }
